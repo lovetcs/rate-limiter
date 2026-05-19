@@ -12,7 +12,7 @@ import lombok.AllArgsConstructor;
 public class Client {
 
     @Id
-    @GeneratedValue(strategy = GeneationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
