@@ -16,6 +16,7 @@ public class ApiKey {
     private Long id;
     private String keyValue;
     
+    // one client can have more than one apikey, hence the many to one
     @ManyToOne
     @JoinColumn(name = "client_id")
     private Client client;
