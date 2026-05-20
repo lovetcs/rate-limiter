@@ -20,7 +20,7 @@ public class ApiKey {
     @ManyToOne
     @JoinColumn(name = "client_id")
     private Client client;
-    private Boolean isActive;
+    private boolean isActive;
     private LocalDateTime createdAt;
     private LocalDateTime expiresAt;
 
